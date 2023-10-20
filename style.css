@@ -23,9 +23,11 @@
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
 }
+
 body {
-  /* Usando Atalho */
+  /* Usando Variável */
   background: var(--bg-url) no-repeat top center / cover;
+  height: 100vh;
 }
 
 body * {
@@ -59,7 +61,6 @@ body * {
 }
 
 /* Switch */
-
 #switch {
   position: relative;
   width: 64px;
@@ -150,4 +151,15 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 14px;
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.png);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.png);
+  }
 }
