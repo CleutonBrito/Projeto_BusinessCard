@@ -13,6 +13,6 @@ function toggleMode() {
   if (html.classList.contains("light")) {
     img.setAttribute("src", "./assets/CleutonBrito.png")
   } else {
-    img.setAttribute("src", "./assets/CleutonBrito_DarkMode.png")
+    img.setAttribute("src", "./assets/CleutonBrito.png")
   }
 }
